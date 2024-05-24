@@ -16,8 +16,11 @@ body {
 
 .main {
   width: 400px;
-  height: 400px;
+  min-height: 400px;
   text-align: center;
+}
+#heading {
+  margin: 1.5rem;
 }
 
 .main-content {
@@ -55,7 +58,7 @@ body {
 
 #cityName {
   /* border: 2px solid red; */
-  margin: 1rem;
+  margin: 2rem;
 }
 
 .cloud-data {
@@ -67,4 +70,40 @@ body {
   width: 30px;
   height: 50px;
   display: none;
+}
+
+@media (max-width: 600px) {
+  .main {
+    height: 90%;
+    width: 90%;
+  }
+
+  #heading {
+    font-size: 2.5rem;
+  }
+
+  #searchInput {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  #searchInput::placeholder {
+    width: 90%;
+  }
+  #searchBtn {
+    padding: 0.6rem 1rem;
+    border-radius: 10px;
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  #cityName {
+    margin: 2rem;
+    font-size: 2.5rem;
+  }
+
+  .cloud-data {
+    margin: 0.5rem;
+    font-size: 1.5rem;
+  }
 }
