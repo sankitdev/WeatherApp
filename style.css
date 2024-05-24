@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans";
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+.main {
+  width: 400px;
+  height: 400px;
+  text-align: center;
+}
+
+.main-content {
+  /* border: 2px solid red; */
+  height: calc(400px - 4rem);
+  margin: 2rem auto;
+}
+
+#searchInput {
+  border: none;
+  background: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0.3rem 0.5rem;
+  outline: none;
+  caret-color: white;
+  color: white;
+  font-size: 1rem;
+}
+
+#searchInput::placeholder {
+  color: white;
+  font-size: 1.1rem;
+  font-family: "Open Sans";
+}
+
+#searchBtn {
+  padding: 0.5rem 0.8rem;
+  border: none;
+  background: white;
+  border-radius: 10px;
+  color: var(--primary-color);
+  margin-left: 0.5rem;
+  font-weight: 600;
+}
+
+#cityName {
+  /* border: 2px solid red; */
+  margin: 1rem;
+}
+
+.cloud-data {
+  margin: 0.5rem;
+}
+
+#temp-img {
+  margin-right: 1rem;
+  width: 30px;
+  height: 50px;
+  display: none;
+}
